@@ -170,18 +170,23 @@ controller.A.onEvent(ControllerButtonEvent.Released, function () {
     if (round1 == 3) {
         music.powerUp.play()
         effects.hearts.startScreenEffect()
+        info.changeScoreBy(100)
     } else if (round2 == 3) {
         music.powerUp.play()
         effects.hearts.startScreenEffect()
+        info.changeScoreBy(200)
     } else if (round3 == 3) {
         music.powerUp.play()
         effects.hearts.startScreenEffect()
+        info.changeScoreBy(150)
     } else if (round4 == 3) {
         music.powerUp.play()
         effects.hearts.startScreenEffect()
+        info.changeScoreBy(10)
     } else if (round5 == 3) {
         music.powerUp.play()
         effects.hearts.startScreenEffect()
+        info.changeScoreBy(1000)
     }
 })
 let round5 = 0
@@ -451,3 +456,4 @@ for (let index = 0; index <= 2; index++) {
     true
     )
 }
+info.setScore(0)
